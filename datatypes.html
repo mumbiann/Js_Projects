@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html> 
+    <body>
+        <h1>
+JavaScript dataTypes
+        </h1>
+        
+        <p id="emo2"> </p>
+        <p id="demo"></p>
+        <p id="ann"></p>
+        <script>
+            var age= 10;
+            var lastName= "Johnson"
+            var cars = ["Acura", "Volvo", "BMW"]; //array
+            var person ={firstname: "John", lastname: "Smith", age: 50, eyecolour: "yellow"}; //object
+            document.getElementById("demo").innerHTML= "This is from an array: " + cars[0];
+            document.getElementById("emo2").innerHTML= "This is " + person.firstname + " He is " + person.age + " years old and has a " + cars[0] + " car model" ;
+            //length of string
+            var str ="Hello world!";
+            document.write(str);
+            document.getElementById("ann").innerHTML= "This is the length of the string: " + str.length;
+
+        </script>
+    </body>
+</html>
