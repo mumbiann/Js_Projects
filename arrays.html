@@ -7,10 +7,24 @@
     <body>
 <p id="math"> </p>
 <p id="ann"></p>
+<p id="p"></p>
         <script > 
         var r = [10, 20, 60, -70, 50, 30]
+        var girls = ["ann", "joe", "sonia"]
+        var boys = ["nick", "jude", "ney", "zick"]
+        var combined = girls.concat(boys);
+        document.write(combined);
+        r.splice(3,0, 65, 78) //indicates that the elements should start at index 3 and there should be no element removed in the array
+        delete r[2]; //removes element at index 2 , there will be a space at that index
+        r.push(65) //adds an element to the end of the array
+        r[0]= 55 //change a specific element in the array
+        r.shift() // removes the 1st element of the array
+        r.unshift(67) //add an element to start of array
+        r.sort();
         document.getElementById("math").innerHTML= 
          r.toString();
+         document.getElementById("p").innerHTML= 
+         r.join(" * ");
          document.getElementById("ann").innerHTML= r;
         </script>
     </body>
